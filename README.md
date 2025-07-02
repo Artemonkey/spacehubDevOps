@@ -7,6 +7,8 @@
 
 ## ⚙️ Архитектура
 
+![deployment-diagram.drawio](https://github.com/Artemonkey/spacehubDevOps/blob/main/doc/deployment-diagram.drawio.png)
+
 - **spaceport_alpha** – космопорт с меткой `alpha`
 - **spaceport_beta** – космопорт с меткой `beta`
 - **spaceport_gamma** – космопорт с меткой `gamma`
@@ -34,15 +36,15 @@
 docker compose up -d
 ```
 
-Ожидайте примерно такой результат в консоли:
+Ожидайте примерно такой вывод в консоли:
 
 ```bash
 [+] Running 5/5
- ✔ Container spacehubdevops-spaceport_gamma-1  Started                                                                                                                                                                             0.4s
- ✔ Container spacehubdevops-spaceport_beta-1   Started                                                                                                                                                                             0.4s
- ✔ Container spacehubdevops-spaceport_alpha-1  Started                                                                                                                                                                             0.3s
- ✔ Container spacehubdevops-spaceport_delta-1  Started                                                                                                                                                                             0.3s
- ✔ Container spacehubdevops-dispatcher-1       Started                                                                                                                                                                             0.7s
+ ✔ Container spacehubdevops-spaceport_gamma-1  Started                                                                       0.4s
+ ✔ Container spacehubdevops-spaceport_beta-1   Started                                                                       0.4s
+ ✔ Container spacehubdevops-spaceport_alpha-1  Started                                                                       0.3s
+ ✔ Container spacehubdevops-spaceport_delta-1  Started                                                                       0.3s
+ ✔ Container spacehubdevops-dispatcher-1       Started                                                                       0.7s
 ```
 
 После этого открывайте в браузере:
@@ -51,7 +53,7 @@ docker compose up -d
 http://spacehub.local/
 ```
 
-## 🏁 Результат
+## 🚀 Результат
 
 - Космопорты работают изолированно и параллельно
 - Диспетчер автоматически балансирует нагрузку
