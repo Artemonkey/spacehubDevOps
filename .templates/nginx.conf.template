@@ -1,0 +1,13 @@
+upstream spacehubapp {
+    server ${SPACEPORT1_SERVICE_HOST}:80;
+    server ${SPACEPORT2_SERVICE_HOST}:80;
+    server ${SPACEPORT3_SERVICE_HOST}:80;
+    server ${SPACEPORT4_SERVICE_HOST}:80;
+}
+server {
+    listen ${NGINX_PORT};
+    server_name ${NGINX_HOST};
+    location / {
+        proxy_pass http://spacehubapp;
+    }
+}
