@@ -40,11 +40,11 @@ docker compose up -d
 
 ```bash
 [+] Running 5/5
- ✔ Container spacehubdevops-spaceport_gamma-1  Started                                                                       0.4s
- ✔ Container spacehubdevops-spaceport_beta-1   Started                                                                       0.4s
- ✔ Container spacehubdevops-spaceport_alpha-1  Started                                                                       0.3s
- ✔ Container spacehubdevops-spaceport_delta-1  Started                                                                       0.3s
- ✔ Container spacehubdevops-dispatcher-1       Started                                                                       0.7s
+ ✔ Container spacehubdevops-spaceport_gamma-1  Started   0.4s
+ ✔ Container spacehubdevops-spaceport_beta-1   Started   0.4s
+ ✔ Container spacehubdevops-spaceport_alpha-1  Started   0.3s
+ ✔ Container spacehubdevops-spaceport_delta-1  Started   0.3s
+ ✔ Container spacehubdevops-dispatcher-1       Started   0.7s
 ```
 
 После этого открывайте в браузере:
