@@ -5,7 +5,12 @@ upstream spacehubapp {
     server ${SPACEPORT4_SERVICE_HOST}:80;
 }
 server {
-    listen ${NGINX_PORT};
+    listen      ${NGINX_PORT};
+    server_name 127.0.0.1;
+    return      444;
+}
+server {
+    listen      ${NGINX_PORT};
     server_name ${NGINX_HOST};
     location / {
         proxy_pass http://spacehubapp;

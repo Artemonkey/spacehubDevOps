@@ -1,8 +1,6 @@
 services:
   spaceport_alpha:
     image: hub.66bit.ru/shared/images/devops-practice:latest
-    ports:
-      - 8000:80
     environment:
       - ASP_INSTANCE_NAME=alpha
     networks:
@@ -10,8 +8,6 @@ services:
 
   spaceport_beta:
     image: hub.66bit.ru/shared/images/devops-practice:latest
-    ports:
-      - 8001:80
     environment:
       - ASP_INSTANCE_NAME=beta
     networks:
@@ -19,8 +15,6 @@ services:
  
   spaceport_gamma:
     image: hub.66bit.ru/shared/images/devops-practice:latest
-    ports:
-      - 8002:80
     environment:
       - ASP_INSTANCE_NAME=gamma
     networks:
@@ -28,8 +22,6 @@ services:
 
   spaceport_delta:
     image: hub.66bit.ru/shared/images/devops-practice:latest
-    ports:
-      - 8003:80
     environment:
       - ASP_INSTANCE_NAME=delta
     networks:
